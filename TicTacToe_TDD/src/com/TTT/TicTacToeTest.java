@@ -35,6 +35,13 @@ class TicTacToeTest {
 		boolean output = game.makeMove('X', 1, 3);
 		assertEquals(output, false);
 	}
+	
+	@Test
+	void testIfMoveIsValid() {
+		TicTacToe game = new TicTacToe();
+		boolean output = game.isValid(0, 0);
+		assertFalse(output);
+	}
 
 
 }
